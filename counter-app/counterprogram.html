@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" 
+content="width=device-width,initial-scale=1.0"/>
+  <title>counter program</title>
+<style>
+h1{
+ text-align: center;
+}
+
+div{
+text-align: center;
+font-size: 60px;
+}
+
+body{
+text-align: center;
+background-color: blue;
+font-size: 30px;
+
+}
+
+</style>
+  
+
+</head>
+<body>
+  <h1>counter program</h1>
+<div id="counter">0</div>
+<button id="myDecreaseBtn">Decrease</button>
+<button id ="myIncreaseBtn">Increase</button>
+<button id="myResetBtn">Reset</button>
+
+<script>
+let count = 0;
+const counterDisplay = document.getElementById("counter");
+
+    document.getElementById("myDecreaseBtn").addEventListener("click", () => {
+      count--;
+      counterDisplay.textContent = count;
+    });
+
+    document.getElementById("myIncreaseBtn").addEventListener("click", () => {
+      count++;
+      counterDisplay.textContent = count;
+	  
+    });
+   document.getElementById("myResetBtn").addEventListener("click", () => {
+      count = 0;
+      counterDisplay.textContent = count; 
+       });
+
+
+</script>
+</body>
+</html>
